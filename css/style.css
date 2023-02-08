@@ -15,7 +15,7 @@ body {
 }
 .links {height: 50px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     width: 25%;
 }
@@ -24,6 +24,9 @@ body {
     font-size: 18px;
     text-decoration: none;
     font-family: Arial;
+}
+.links a:hover {
+    font-weight: bold;
 }
 button {
     font-family: "Manrope";
@@ -36,6 +39,10 @@ button {
     border: solid white;
     border-width: 1px;
     border-radius: 10px;
+}
+.conButton:hover {
+    color: black;
+    background: white;
 }
 .hero {display: flex;
     justify-content:space-between;
@@ -55,6 +62,39 @@ button {
     width: 400px;
     object-fit:contain;
     padding-right: 100px;
+}
+.BWfilter {
+    filter: grayscale(100%)
+}
+.BWoff {
+    filter: grayscale(0%)
+}
+.myName {
+    cursor: pointer;
+}
+#work {
+    cursor: pointer;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 .workBar {color: white;
     background-color:red;
@@ -102,6 +142,11 @@ button {
     border-width: 1px;
     border-radius: 10px;
 }
+.caseButton:hover {
+    color: red;
+    background-color: white;
+    outline: solid red;
+}
 .mockBox {
     width: 50%;
     object-fit: contain;
@@ -132,6 +177,12 @@ button {
     align-items: flex-end;
     margin-right: 20px;
 }
+.caseCard img {
+    transition: all 0.5s ease
+}
+.caseCard img:hover {
+    transform: scale(1.1, 1.1);
+}
 a {
     color: red;
     text-decoration: none;
@@ -152,6 +203,7 @@ h2 {
 }
 .heroText span {
     font-weight:bold;
+    color: red;
 }
 h3 {
     font-size: 18px;
